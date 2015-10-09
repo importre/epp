@@ -1,2 +1,11 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+.navbar {
+  border-radius: 0;
+}
+
+.body {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}

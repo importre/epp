@@ -2,11 +2,11 @@
 
 Electron Application
 
-- electron
-- webpack
-- react
 - bootstrap
-- electron-app
+- electron
+- react
+- react-router
+- webpack
 
 
 ## Dev

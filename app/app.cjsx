@@ -1,11 +1,119 @@
 React = require 'react'
 ReactDom = require 'react-dom'
+{ Link } = require 'react-router'
+{ Navbar, NavBrand } = require 'react-bootstrap'
+Header = require './header.cjsx'
 
 window.React = React
 window.ReactDom = ReactDom
 
 module.exports = React.createClass
   render: ->
-    <div className="container">
-      <h1>Electron Application</h1>
+    <div>
+      <Header />
+      <div className="container body">
+        <div>start</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>....</div>
+        <div>end</div>
+      </div>
     </div>
