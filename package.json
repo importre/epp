@@ -19,7 +19,7 @@
     "start": "webpack --config webpack.config.js; electron .",
     "start-dev": "DEV=1 electron .",
     "start-hot": "webpack-dev-server --config webpack.config.js --hot --port 8000 --inline",
-    "build": "webpack --config webpack.config.js; electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion; rm *.woff *.eot *.ttf *.svg *.woff2"
+    "build": "webpack --config webpack.config.js; electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion --icon=assets/epp.icns; rm *.woff *.eot *.ttf *.svg *.woff2"
   },
   "files": [
     "index.js",
