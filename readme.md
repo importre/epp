@@ -1,5 +1,7 @@
 # epp
 
+<img src='assets/epp.png' width=256 />
+
 Electron Application
 
 - bootstrap
