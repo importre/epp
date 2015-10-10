@@ -1,6 +1,7 @@
 React = require 'react'
 ReactDom = require 'react-dom'
 { CollapsibleNav, Nav, Navbar, NavBrand, NavItem } = require 'react-bootstrap'
+{ Link } = require 'react-router'
 { LinkContainer } = require 'react-router-bootstrap'
 Package = require '../package.json'
 
@@ -11,7 +12,7 @@ module.exports = React.createClass
   render: ->
       <Navbar inverse fixedTop={yes} toggleNavKey={0}>
         <NavBrand>
-          <a href="/">{Package.productName} {Package.version}</a>
+          <Link to="/">{Package.productName} {Package.version}</Link>
         </NavBrand>
         <CollapsibleNav eventKey={0}>
           <Nav navbar>
