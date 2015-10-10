@@ -1,6 +1,8 @@
 'use strict';
 const app = require('app');
 const BrowserWindow = require('browser-window');
+const Menu = require('menu')
+const template = require('./menu')
 
 // report crashes to the Electron project
 require('crash-reporter').start();
@@ -10,6 +12,7 @@ require('electron-debug')();
 
 // prevent window being garbage collected
 let mainWindow;
+var menu = Menu.buildFromTemplate(template);
 
 function onClosed() {
 	// dereference the window
@@ -30,6 +33,11 @@ function createMainWindow() {
 		win.loadUrl(`file://${__dirname}/index.html`);
 	}
 	win.on('closed', onClosed);
+
+	if (menu) {
+		Menu.setApplicationMenu(menu);
+		menu = null;
+	}
 
 	return win;
 }
