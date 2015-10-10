@@ -5,6 +5,7 @@
 Electron Application
 
 - bootstrap
+- coffeescrirpt (cjsx)
 - electron
 - react
 - react-router
