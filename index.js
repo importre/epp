@@ -26,7 +26,6 @@ function createMainWindow() {
 		height: 600
 	});
 
-	console.log(process.env);
 	if (process.env.DEV) {
 		win.loadUrl('http://localhost:8000/dev.html');
 	} else {
@@ -43,9 +42,7 @@ function createMainWindow() {
 }
 
 app.on('window-all-closed', () => {
-	if (process.platform !== 'darwin') {
-		app.quit();
-	}
+	app.quit();
 });
 
 app.on('activate-with-no-open-windows', () => {
@@ -56,4 +53,9 @@ app.on('activate-with-no-open-windows', () => {
 
 app.on('ready', () => {
 	mainWindow = createMainWindow();
+
+	if (process.env.DEV) {
+		const watcher = require('./electron/watcher.js');
+		watcher.watch(app, ['./index.js', './electron']);
+	}
 });
