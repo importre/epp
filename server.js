@@ -10,6 +10,14 @@ const win32 = process.platform === 'win32';
 
 var child = null;
 
+function getElectronArgs() {
+  var args = ['.'];
+  if (process.argv.indexOf('--2nd') != -1) {
+    args.push('--2nd');
+  }
+  return args
+}
+
 const server = net.createServer(function (c) {
   if (child) {
     if (win32) {
@@ -23,8 +31,7 @@ const server = net.createServer(function (c) {
 
   process.env.DEV = 1
   var cmd = win32 ? 'electron.cmd' : 'electron';
-
-  child = spawn(cmd, ['.']);
+  child = spawn(cmd, getElectronArgs());
   child.stdout.on('data', function (data) {
     console.log(data + '');
   });
