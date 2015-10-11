@@ -4,7 +4,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'app/main.cjsx'),
   output: {
     path: path.resolve(__dirname, 'out'),
-    publicPath: '/out/',
+    publicPath: 'out/',
     filename: 'app.js'
   },
   module: {
