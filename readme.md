@@ -16,8 +16,8 @@ Electron Application
 
 ```
 $ npm install
-$ npm run start-hot
-$ npm run start-dev
+$ npm run start-hot  # reload views
+$ npm run start-dev  # restart electron if index.js is changed and/or electron/* are changed
 ```
 
 ### Run
