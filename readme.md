@@ -15,24 +15,32 @@ Electron Application
 ## Dev
 
 ```sh
+# install dependencies
 $ npm install
-$ npm run start-hot  # reload views if app/* are changed
+```
+
+```sh
+# reload views if app/* are changed
+$ npm run start-hot
 ```
 
 and then
 
 ```sh
-$ npm run start-dev     # restart electron if index.js, electron/* are changed
+# restart electron if index.js, electron/* are changed
+$ npm run start-dev
 ```
 or
 ```sh
-$ npm run start-dev2nd  # equal to `start-dev` + show electron to 2nd monitor
+# equal to `start-dev` + show electron to 2nd monitor
+$ npm run start-dev2nd
 ```
 
 ### Run
 
 ```sh
-$ npm start  # build and start electron
+# build and start electron
+$ npm start
 ```
 
 ### Build
