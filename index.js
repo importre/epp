@@ -2,7 +2,7 @@
 const app = require('app');
 const BrowserWindow = require('browser-window');
 const Menu = require('menu')
-const template = require('./menu')
+const template = require('./electron/menu')
 
 // report crashes to the Electron project
 require('crash-reporter').start();
