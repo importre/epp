@@ -1,8 +1,10 @@
-# epp
-
 <img src='assets/epp.png' width=256 />
 
-Electron Application
+# epp
+
+Electron aPPlication
+
+![demo][gif]
 
 - bootstrap
 - coffeescrirpt (cjsx)
@@ -57,3 +59,7 @@ Builds the app for OS X, Linux, and Windows, using [electron-packager](https://g
 ## License
 
 MIT © [Jaewe Heo](http://import.re)
+
+
+
+[gif]: assets/epp.gif
