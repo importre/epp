@@ -49,6 +49,11 @@ const server = net.createServer(function (c) {
 
 server.listen(config.port, function (e) {
   const client = net.connect({port: config.port}, function () {
+    const args = ['--config', 'webpack.config.js', '--hot',
+            '--port', 8000, '--inline'];
+    spawn('webpack-dev-server', args, {
+      stdio: 'inherit'
+    });
     client.write('hello');
   });
 

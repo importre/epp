@@ -16,10 +16,8 @@
   "electronVersion": "0.33.3",
   "scripts": {
     "test": "xo",
-    "start": "webpack --config webpack.config.js; electron .",
-    "start-dev": "node server.js",
-    "start-dev2nd": "node server.js --2nd",
-    "start-hot": "webpack-dev-server --config webpack.config.js --hot --port 8000 --inline",
+    "start": "node starter.js --2nd",
+    "start-1st": "node starter.js",
     "build": "npm run build-osx && npm run build-win",
     "build-osx": "webpack --config webpack.config.js; electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --prune --asar --platform=darwin --arch=x64 --version=$npm_package_electronVersion --icon=assets/epp.icns",
     "build-win": "webpack --config webpack.config.js; electron-packager . $npm_package_productName --overwrite --out=dist --ignore='^/dist$' --prune --asar --platform=win32 --arch=all --version=$npm_package_electronVersion --icon=assets/epp.ico"
