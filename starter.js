@@ -5,6 +5,7 @@
 const net = require('net');
 const path = require('path');
 const spawn = require('child_process').spawn;
+const sleep = require('sleep').sleep;
 const config = require('./config');
 const win32 = process.platform === 'win32';
 
@@ -54,6 +55,7 @@ server.listen(config.port, function (e) {
     spawn('webpack-dev-server', args, {
       stdio: 'inherit'
     });
+    sleep(1);
     client.write('hello');
   });
 
