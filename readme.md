@@ -19,6 +19,7 @@ Electron aPPlication
 $ npm install
 
 # support for reloading views, restarting electron
+# if app/* and/or index.js, electron/* are changed
 $ npm start
 ```
 
