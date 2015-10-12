@@ -22,6 +22,8 @@ $ npm install
 $ npm start
 ```
 
+![gif][gif]
+
 ### Build
 
 ```sh
