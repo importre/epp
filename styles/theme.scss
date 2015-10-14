@@ -3,6 +3,10 @@ $bgHighlight    : #388AC6;
 $colDefault     : white;
 $colHighlight   : white;
 
+.navbar > div.container {
+  width: 100%;
+}
+
 .navbar-default {
   background-color: $bgDefault;
   border-color: $bgHighlight;
@@ -58,7 +62,10 @@ $colHighlight   : white;
   }
 }
 
-@media (max-width: 767px) {
+.container {
+}
+
+@media (max-width: 768px) {
   .navbar-default .navbar-nav .open .dropdown-menu {
     > li > a {
       color: $colDefault;
