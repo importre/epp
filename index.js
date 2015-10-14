@@ -22,7 +22,7 @@ function onClosed() {
 
 function createMainWindow() {
 	const is2nd = process.argv.indexOf('--2nd') >= 0;
-  var opts = { width: 800, height: 600 };
+  var opts = { width: 1200, height: 600 };
   if (is2nd) {
     setOptsForDualScreen(opts);
   }
@@ -30,6 +30,7 @@ function createMainWindow() {
 	const win = new BrowserWindow(opts);
 	if (process.env.DEV) {
 		win.loadUrl('http://localhost:8000/dev.html');
+		win.openDevTools();
 	} else {
 		win.loadUrl(`file://${__dirname}/index.html`);
 	}
