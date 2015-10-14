@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'app/main.cjsx'),
+  entry: path.resolve(__dirname, 'app/app.cjsx'),
   output: {
     path: path.resolve(__dirname, 'out'),
     publicPath: 'out/',

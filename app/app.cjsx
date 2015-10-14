@@ -1,13 +1,22 @@
-React = require 'react'
-Header = require './header.cjsx'
+ReactDom = require 'react-dom'
+{ Router, Route, IndexRoute } = require 'react-router'
+createMemoryHistory = require('history/lib/createMemoryHistory')
 
-window.React = React
+Master = require './master.cjsx'
+Home = require './home.cjsx'
+About = require './about.cjsx'
+Intro = require './intro.cjsx'
 
-module.exports = React.createClass
-  render: ->
-    <div>
-      <Header />
-      <div className="body">
-        {@props.children}
-      </div>
-    </div>
+require '../index.scss'
+
+window.ReactDom = ReactDom
+
+ReactDom.render(
+  <Router history={createMemoryHistory()}>
+    <Route path="/" component={Master}>
+      <IndexRoute component={Home} />
+      <Route path="intro" component={Intro} />
+      <Route path="about" component={About} />
+    </Route>
+  </Router>
+  , document.querySelector '#main')
