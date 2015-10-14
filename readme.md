@@ -1,6 +1,6 @@
-<img src='assets/epp.png' width=256 />
-
 # epp
+
+<img src='assets/epp.png' width=256 />
 
 Electron aPPlication
 
@@ -23,7 +23,6 @@ $ npm install
 $ npm start
 ```
 
-![gif][gif]
 
 ### Build
 
@@ -33,10 +32,7 @@ $ npm run build-osx  # osx(64)
 $ npm run build-win  # win(32, 64)
 ```
 
+
 ## License
 
 MIT © [Jaewe Heo](http://import.re)
-
-
-
-[gif]: assets/epp.gif
