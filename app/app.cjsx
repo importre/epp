@@ -7,5 +7,7 @@ module.exports = React.createClass
   render: ->
     <div>
       <Header />
-      {@props.children}
+      <div className="container body">
+        {@props.children}
+      </div>
     </div>
