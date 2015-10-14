@@ -2,7 +2,7 @@
 const app = require('app');
 const BrowserWindow = require('browser-window');
 const Menu = require('menu')
-const template = require('./electron/menu')
+const template = require('./scripts/menu')
 
 // report crashes to the Electron project
 require('crash-reporter').start();
@@ -68,7 +68,7 @@ app.on('ready', () => {
 	mainWindow = createMainWindow();
 
 	if (process.env.DEV) {
-		const watcher = require('./electron/watcher.js');
-		watcher.watch(app, ['./index.js', './electron']);
+		const watcher = require('./scripts/watcher.js');
+		watcher.watch(app, ['./index.js', './scripts']);
 	}
 });
